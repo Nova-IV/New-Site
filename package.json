@@ -4,8 +4,12 @@
   "description": "Lien pour la page : https://nova-iv.github.io/New-Site/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel --no-babelrc src -w -d js --preset=env"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }

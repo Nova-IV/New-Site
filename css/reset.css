@@ -1,16 +1,16 @@
-/* Définir la taille de base pour le rem */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%; 
     scroll-behavior: smooth;
 }
 
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font: 1.6rem "Roboto Slab", sans-serif; /* 16px */
+    font: 1.6rem "Roboto Slab", sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@ p, figure, ol, ul, details summary{
     margin: 0;
 }
 details summary::-webkit-details-marker {
-    display: none;   /* Masque la flèche pour les navigateurs WebKit (comme Chrome et Safari) */
+    display: none;   
     
 }
 details summary{

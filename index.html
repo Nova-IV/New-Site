@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Sofiane Zaidi</title>
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+ 
   <header>
-    <div class="logo">
-      <h1>Developer <span>FullStack</span></h1>
-    </div>
+    <h1 class="logo">Developer <span>FullStack</span></h1>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -27,71 +25,86 @@
 
   <!-- Hero Section -->
   <section class="hero" id="about">
-    <div class="hero-content">
-      <p>Bienvenue sur mon portfolio de développeur fullstack. Je suis Sofiane Zaidi, passionné par la création d'applications web modernes et performantes. Je combine expertise technique et créativité pour transformer vos idées en solutions digitales innovantes.</p>
-    </div>
+    <p class="hero-content">Bienvenue sur mon portfolio de développeur fullstack. Je suis Sofiane Zaidi, passionné par la création d'applications web modernes et performantes. Je combine expertise technique et créativité pour transformer vos idées en solutions digitales innovantes.</p>
   </section>
 
-  <!-- Language Section -->
+  
   <section class="language-section" id="skills">
     <h2>Langage</h2>
-    <div class="language-icons">
-      <div class="language-icon">
-        <i class="fab fa-html5 fa-3x" style="color: var(--orange-primary);"></i>
-      </div>
-      <div class="language-icon">
-        <i class="fab fa-css3-alt fa-3x" style="color: var(--orange-primary);"></i>
-      </div>
-      <div class="language-icon">
-        <i class="fab fa-js-square fa-3x" style="color: var(--orange-primary);"></i>
-      </div>
-      <div class="language-icon">
-        <i class="fab fa-react fa-3x" style="color: var(--orange-primary);"></i>
-      </div>
-      <div class="language-icon">
-        <i class="fab fa-node fa-3x" style="color: var(--orange-primary);"></i>
-      </div>
-    </div>
+    <ul class="language-icons">
+      <li class="language-icon" data-name="HTML">
+        <i class="fab fa-html5 fa-3x"></i>
+        <span class="lang-name">HTML</span>
+      </li>
+      <li class="language-icon" data-name="CSS">
+        <i class="fab fa-css3-alt fa-3x"></i>
+        <span class="lang-name">CSS</span>
+      </li>
+      <li class="language-icon" data-name="JavaScript">
+        <i class="fab fa-js-square fa-3x"></i>
+        <span class="lang-name">JavaScript</span>
+      </li>
+      <li class="language-icon" data-name="PHP">
+        <i class="fab fa-php fa-3x"></i>
+        <span class="lang-name">PHP</span>
+      </li>
+      <li class="language-icon" data-name="Java">
+        <i class="fab fa-java fa-3x"></i>
+        <span class="lang-name">Java</span>
+      </li>
+      <li class="language-icon" data-name="SQL">
+        <i class="fas fa-database fa-3x"></i>
+        <span class="lang-name">SQL</span>
+      </li>
+    </ul>
     <div class="progress-bar"></div>
   </section>
 
-  <!-- Project Section -->
+  
   <section class="project-section" id="project">
     <h2>Project</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="/api/placeholder/400/320" alt="Projet 1">
-      </div>
-      <div class="project-card">
-        <img src="/api/placeholder/400/320" alt="Projet 2">
-      </div>
-      <div class="project-card">
-        <img src="/api/placeholder/400/320" alt="Projet 3">
-      </div>
-      <div class="project-card">
-        <img src="/api/placeholder/400/320" alt="Projet 4">
-      </div>
-    </div>
+    <article class="projects-container">
+      <ul class="projects-list">
+        <li class="project-card" data-project="1">
+          <img src="asset/projet1.jpg" alt="Projet 1">
+        </li>
+        <li class="project-card" data-project="2">
+          <img src="asset/projet2.jpg" alt="Projet 2">
+        </li>
+        <li class="project-card" data-project="3">
+          <img src="asset/projet3.jpg" alt="Projet 3">
+        </li>
+        <li class="project-card" data-project="4">
+          <img src="asset/projet4.jpg" alt="Projet 4">
+        </li>
+      </ul>
+      <aside class="project-details">
+        <h3 class="project-title">Sélectionnez un projet</h3>
+        <p class="project-description">Cliquez sur l'un des projets à gauche pour afficher sa description détaillée.</p>
+      </aside>
+    </article>
   </section>
 
-  <!-- Footer -->
+  
   <footer id="contact">
-    <div class="contact-info">
+    <address class="contact-info">
       <p>Contact :</p>
       <p>Email : contact@sofianezaidi.com</p>
-    </div>
-    <div class="social-links">
-      <div class="social-icon">
-        <i class="fab fa-linkedin-in fa-lg" style="color: white;"></i>
-      </div>
-      <div class="social-icon">
-        <i class="fab fa-github fa-lg" style="color: white;"></i>
-      </div>
-      <div class="social-icon">
-        <i class="fab fa-twitter fa-lg" style="color: white;"></i>
-      </div>
-    </div>
+    </address>
+    <ul class="social-links">
+      <li class="social-icon">
+        <i class="fab fa-linkedin-in fa-lg"></i>
+      </li>
+      <li class="social-icon">
+        <i class="fab fa-github fa-lg"></i>
+      </li>
+      <li class="social-icon">
+        <i class="fab fa-twitter fa-lg"></i>
+      </li>
+    </ul>
   </footer>
+
+  
   <script src="js/app.js"></script>
 </body>
 </html>

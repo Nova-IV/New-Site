@@ -1,5 +1,5 @@
 @import url(./reset.css);
-/* Variables CSS */
+
 :root {
   --orange-primary: #E86600;
   --orange-secondary: #CB5100;
@@ -8,14 +8,13 @@
   --light-gray: #f2f2f2;
 }
 
-/* Styles de base */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--dark-gray);
   background-color: white;
 }
 
-/* Header */
+
 header {
   background-color: var(--light-gray);
   padding: 2rem;
@@ -34,7 +33,7 @@ header {
   font-weight: normal;
 }
 
-/* Navigation */
+
 nav ul {
   display: flex;
 }
@@ -54,7 +53,7 @@ nav ul li a:hover {
   color: var(--orange-secondary);
 }
 
-/* Hero Section */
+
 .hero {
   background-color: var(--light-gray);
   padding: 8rem 4rem;
@@ -66,7 +65,7 @@ nav ul li a:hover {
 .hero-content {
   max-width: 90rem;
   margin: 0 auto;
-  font-size: 2.2rem; /* Augmentation de la taille de police */
+  font-size: 2.2rem; 
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
 }

@@ -71,3 +71,88 @@ nav ul li a:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+.language-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.language-section h2 {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.language-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.language-icon {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.language-icon i {
+  color: var(--orange-primary);
+  transition: color 0.3s;
+}
+
+.language-icon:hover {
+  transform: translateY(-1rem);
+  background-color: var(--orange-primary);
+}
+
+.language-icon:hover i {
+  color: white; 
+}
+
+.lang-name {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.language-icon:hover .lang-name {
+  opacity: 1;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 0.4rem;
+  background-color: var(--light-gray);
+  margin: 4rem auto;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--orange-primary);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

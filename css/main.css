@@ -1,5 +1,5 @@
 @import url(./reset.css);
-
+/* Variables CSS */
 :root {
   --orange-primary: #E86600;
   --orange-secondary: #CB5100;
@@ -8,14 +8,14 @@
   --light-gray: #f2f2f2;
 }
 
-
+/* Styles de base */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--dark-gray);
   background-color: white;
 }
 
-
+/* Utilitaires */
 .sr-only {
   position: absolute;
   width: 0.1rem;
@@ -28,7 +28,7 @@ body {
   border: 0;
 }
 
-
+/* Header */
 header {
   background-color: var(--light-gray);
   padding: 2rem;
@@ -47,7 +47,7 @@ header {
   font-weight: normal;
 }
 
-
+/* Navigation */
 nav ul {
   display: flex;
 }
@@ -67,7 +67,7 @@ nav ul li a:hover {
   color: var(--orange-secondary);
 }
 
-
+/* Hero Section */
 .hero {
   background-color: var(--light-gray);
   padding: 8rem 4rem;
@@ -79,12 +79,12 @@ nav ul li a:hover {
 .hero-content {
   max-width: 90rem;
   margin: 0 auto;
-  font-size: 2.2rem; 
+  font-size: 2.2rem; /* Augmentation de la taille de police */
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
 }
 
-
+/* Language Section */
 .language-section {
   padding: 4rem 2rem;
   text-align: center;
@@ -128,7 +128,7 @@ nav ul li a:hover {
 }
 
 .language-icon:hover i {
-  color: white; 
+  color: white; /* Inversion des couleurs au survol */
 }
 
 .lang-name {
@@ -170,6 +170,78 @@ nav ul li a:hover {
   transform: translate(-50%, -50%);
 }
 
+/* Project Section */
+.project-section {
+  padding: 4rem 0;
+  background-color: var(--light-gray);
+  min-height: 100vh;
+}
+
+.project-section h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-gray);
+}
+
+.projects-container {
+  display: flex;
+  gap: 4rem;
+  padding: 0 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.projects-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-card {
+  height: 25rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-1rem);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-details {
+  flex: 1;
+  background-color: white;
+  border-radius: 0.8rem;
+  padding: 3rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: var(--orange-primary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/* Footer */
 footer {
   background-color: var(--dark-gray);
   color: white;
@@ -210,4 +282,78 @@ footer {
   color: white;
 }
 
+/* Media Queries pour Responsive Design */
+@media (max-width: 99.2rem) {
+  .projects-container {
+    flex-direction: column;
+  }
+  
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .project-card {
+    height: 20rem;
+  }
+}
 
+@media (max-width: 76.8rem) {
+  header {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    margin-top: 2rem;
+  }
+  
+  .logo {
+    font-size: 3.6rem;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    font-size: 1.8rem;
+  }
+  
+  .hero {
+    padding: 6rem 2rem;
+  }
+  
+  .hero-content {
+    font-size: 1.8rem;
+  }
+  
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+  
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 48rem) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0.5rem 1rem;
+  }
+  
+  .language-icons {
+    gap: 1.5rem;
+  }
+  
+  .language-icon {
+    width: 9rem;
+    height: 9rem;
+  }
+}
